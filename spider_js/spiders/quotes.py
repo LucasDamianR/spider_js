@@ -20,7 +20,7 @@ class QuoteSpider(scrapy.Spider):
         item = SpiderJsItem()
         quotes = response.css('.quote')
         for quote in quotes:
-
+            #Using unicodedata to return normal form for Unicode string
             item['text'] = unicodedata.normalize('NFKD',
                             quote.css('.text::text').get()).encode('ascii', 'ignore').decode("utf-8")
             item['author'] = unicodedata.normalize('NFKD',
@@ -31,11 +31,12 @@ class QuoteSpider(scrapy.Spider):
         #try to get the next page element
         try:
             next_page = response.css('.next > a').attrib['href']
+            #builds a full absolute URL using the urljoin()
             next_page = response.urljoin(next_page)
             if next_page is not None:
         
                 yield SplashRequest(url=next_page, headers={'User-Agent': self.user_agent}, callback=self.parse)
         except Exception as e:
-            print(e)
+            print("End")
         
 
