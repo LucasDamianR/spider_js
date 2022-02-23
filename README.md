@@ -11,7 +11,7 @@ Click on Code and then on Download Zip.</br>
 Or create a folder, open git bash and run:
 <pre><code> git clone https://github.com/LucasDamianR/spider_js.git </code></pre>
 
-In order to work you must install requirements.txt. 
+In order for it to work you must install requirements.txt. 
 
 • cd to the directory where requirements.txt is located</br>
 • activate your virtualenv (recommended)</br>
