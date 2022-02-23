@@ -2,7 +2,8 @@
 <i> A Spider with Javascript using Splash</i>
 
 
-The following project is a challenge requested by [Zyte](https://www.zyte.com/)
+The following project is a challenge requested by [Zyte](https://www.zyte.com/) </br>
+This project has been developed on Windows 
 
 <h2>Installation</h2>
 
@@ -21,11 +22,12 @@ run in your shell:
 
 • [installation guide](https://docs.docker.com/desktop/windows/wsl/)
 
+<h3> Scrapy Splash </h3>
+
+• [installation guide](https://github.com/scrapy-plugins/scrapy-splash)
+
 <h2>Running the project</h2>
 
-<h4>1 step:</h4>
-
-
-<h4>2 step:</h4>
-
-<h4>3 step:</h4>
+Make sure you have the container running on port 8050 and in <code>settings.py</code></br>
+run in terminal:
+<pre><code>scrapy crawl books -o books.json</code></pre>
