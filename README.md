@@ -30,4 +30,4 @@ run in your shell:
 
 Make sure you have the container running on port 8050 and in <code>settings.py</code></br>
 run in terminal:
-<pre><code>scrapy crawl books -o books.json</code></pre>
+<pre><code>scrapy crawl quote -o quote.json</code></pre>
